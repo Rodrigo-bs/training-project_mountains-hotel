@@ -27,6 +27,7 @@
     
     --font-size-12: 1.2rem;
     --font-size-18: 1.8rem;
+    --font-size-24: 2.4rem;
     --font-size-28: 2.8rem;
     --font-size-35: 3.5rem;
     --font-size-55: 5.5rem;
@@ -60,6 +61,10 @@ img {
     max-width: 100%;
 }
 
+body {
+    background: var(--rosa-4);
+}
+
 .container {
     max-width: 1250px;
     padding: 0 5px;
@@ -76,6 +81,22 @@ img {
 
 .button.pink {
     background: var(--rosa-1);
+}
+
+.button.transparent {
+    background: none;
+    color: var(--rosa-1) !important; 
+    text-decoration: underline;
+    opacity: .7;
+}
+
+.button.transparent::before {
+    display: none;
+}
+
+.button.transparent:hover {
+    color: var(--rosa-2);
+    opacity: 1;
 }
 
 .button span {
