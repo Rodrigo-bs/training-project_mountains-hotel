@@ -38,6 +38,7 @@
 
     --transition-2: .2s ease;
     --transition-3: .3s ease;
+    --transition-8: .8s ease;
 
     font-size: 62.5%;
 }
@@ -120,4 +121,17 @@ body {
 
 .button:hover::before{
     left: 0;
+}
+
+/* animation-section */
+
+.animation-section {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: var(--transition-8);
+}
+
+.animation-section.ativo {
+    opacity: 1;
+    transform: translateX(0);
 }
