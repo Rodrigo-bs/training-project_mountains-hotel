@@ -180,3 +180,61 @@
 .favorite-rooms-box .box-content .box-buttons .button + .button {
     margin-left: 15px;
 }
+
+/* services section */
+
+.services-section {
+    background: var(--rosa-1);
+    padding: 60px 0;
+}
+
+.services-section .services-sub_title {
+    font-size: var(--font-size-16);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services-section .container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-section .services-box_img img {
+    border: var(--border-box-2);
+    border-radius: 10px;
+}
+
+.services-box_content .box_content-li a {
+    display: block;
+    max-width: 500px;
+    padding: 10px 10px 10px 70px;
+    border-radius: 5px;
+    background: var(--rosa-3) url('../img/icon-restaurant.svg') no-repeat 10px;
+    transition: var(--transition-3);
+    opacity: .7;
+}
+
+.services-box_content .box_content-li a:hover {
+    transform: translateX(-15px);
+    opacity: 1;
+}
+
+.services-box_content .box_content-li + .box_content-li a {
+    margin: 5px 0;
+}
+
+.services-box_content .box_content-li a h1,
+.services-box_content .box_content-li a p {
+    color: var(--marrom-1);
+    font-weight: 600;
+}
+
+.services-box_content .box_content-li a h1 {
+    font-size: var(--font-size-24);
+}
+
+.services-box_content .box_content-li a p {
+    font-size: var(--font-size-16);
+}
