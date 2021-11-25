@@ -205,7 +205,17 @@
 .services-section .services-sub_title {
     font-size: var(--font-size-16);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
+}
+
+.services-section .services-sub_title::after {
+    content: '';
+    padding-top: 20px;
+    width: 78px;
+    height: 16px;
+    display: block;
+    background: url('../img/icon-mountain.svg') no-repeat center center;
+    margin: 0 auto;
 }
 
 .services-section .container {
@@ -216,6 +226,7 @@
 }
 
 .services-section .services-box_img img {
+    max-width: 500px;
     border: var(--border-box-2);
     border-radius: 10px;
 }
@@ -223,11 +234,25 @@
 .services-box_content .box_content-li a {
     display: block;
     max-width: 500px;
-    padding: 10px 10px 10px 70px;
+    padding: 10px 10px 10px 75px;
     border-radius: 5px;
-    background: var(--rosa-3) url('../img/icon-restaurant.svg') no-repeat 10px;
     transition: var(--transition-3);
     opacity: .7;
+}
+
+#restaurant_service {
+    background: var(--rosa-3) url('../img/icon-restaurant.svg') no-repeat 10px;
+    background-size: 50px 50px;
+}
+
+#climbing_service {
+    background: var(--rosa-3) url('../img/icon-climbing.svg') no-repeat 10px;
+    background-size: 50px 50px;
+}
+
+#swim_service {
+    background: var(--rosa-3) url('../img/icon-swim.svg') no-repeat 10px;
+    background-size: 50px 50px;
 }
 
 .services-box_content .box_content-li a:hover {
