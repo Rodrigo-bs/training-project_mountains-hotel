@@ -90,7 +90,6 @@ body {
     background: none;
     color: var(--rosa-1) !important; 
     text-decoration: underline;
-    opacity: .7;
 }
 
 .button.transparent::before {
@@ -98,8 +97,8 @@ body {
 }
 
 .button.transparent:hover {
-    color: var(--rosa-2);
-    opacity: 1;
+    color: var(--rosa-3);
+    opacity: .7;
 }
 
 .button span {

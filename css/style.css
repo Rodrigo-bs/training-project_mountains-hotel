@@ -54,7 +54,7 @@
 
 .header .menu-nav li a:not(.button):hover  {
     color: var(--branco);
-    text-decoration: underline;
+    transform: translateY(-2px);
 }
 
 /* banner */
@@ -68,11 +68,24 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
+
+/* .banner-section::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} */
 
 .banner-title {
     font-size: var(--font-size-55);
     text-align: center;
+    /* z-index: 2; */
 }
 
 .banner-title span {
@@ -85,6 +98,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    /* z-index: 2; */
 }
 
 .banner-buttons a span {
