@@ -89,7 +89,7 @@ input:hover {
     margin: 0 auto;
 }
 
-.button {
+a.button {
     padding: 10px 15px !important;
     background: var(--verde-2);
     position: relative;
@@ -97,32 +97,32 @@ input:hover {
     display: block;
 }
 
-.button.pink {
+a.button.pink {
     background: var(--rosa-1);
 }
 
-.button.transparent {
+a.button.transparent {
     background: none;
     color: var(--rosa-1) !important; 
     text-decoration: underline;
     transition: var(--transition-3);
 }
 
-.button.transparent::before {
+a.button.transparent::before {
     display: none;
 }
 
-.button.transparent:hover {
+a.button.transparent:hover {
     transform: translateY(-2px);
     opacity: .7;
 }
 
-.button span {
+a.button span {
     position: relative;
     z-index: 10;
 }
 
-.button::before {
+a.button::before {
     content: '';
     display: block;
     position: absolute;
@@ -136,16 +136,16 @@ input:hover {
     z-index: 9;
 }
 
-.button:hover::before{
+a.button:hover::before{
     left: 0;
 }
 
-button {
+button.button {
     position: relative;
     overflow: hidden;
 }
 
-button::before {
+button.button::before {
     content: '';
     width: 100%;
     height: 100%;
