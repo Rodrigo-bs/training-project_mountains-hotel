@@ -68,6 +68,17 @@ body {
     background: var(--rosa-4);
 }
 
+input,
+textarea {
+    outline: none;
+    transition: var(--transition-3);
+}
+
+input:focus,
+input:hover {
+    border: 1px solid var(--rosa-1) !important;
+}
+
 .container {
     max-width: 1250px;
     padding: 0 5px;
@@ -90,6 +101,7 @@ body {
     background: none;
     color: var(--rosa-1) !important; 
     text-decoration: underline;
+    transition: var(--transition-3);
 }
 
 .button.transparent::before {
@@ -97,7 +109,7 @@ body {
 }
 
 .button.transparent:hover {
-    color: var(--rosa-3);
+    transform: translateY(-2px);
     opacity: .7;
 }
 
@@ -121,6 +133,28 @@ body {
 }
 
 .button:hover::before{
+    left: 0;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.25);
+    transition: var(--transition-2);
+    z-index: 9;
+}
+
+button:hover::before {
     left: 0;
 }
 
