@@ -79,6 +79,10 @@ input:hover {
     border: 1px solid var(--rosa-1) !important;
 }
 
+.clear {
+    clear: both;
+}
+
 .container {
     max-width: 1250px;
     padding: 0 5px;

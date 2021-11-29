@@ -1,6 +1,9 @@
 import AnimationSections from "./module/animation-section.js";
-import AnimationServiceImage from "./module/animation-service-image.js"
+import AnimationServiceImage from "./module/animation-service-image.js";
 
 let animation = new AnimationSections('section.animation-section', 'animation-section-ativo');
-animation.checkScreenLocation()
+animation.checkScreenLocation();
 animation.init();
+
+let imageAnimation = new AnimationServiceImage('.box_content-li a', '.services-box_img img','services-img-ativo');
+imageAnimation.init();

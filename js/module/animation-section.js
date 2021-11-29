@@ -10,7 +10,6 @@ export default class AnimationSections {
 
     checkViewSection() {
         let distances = []
-        console.log(this.sections)
         this.sections.forEach(section => {
             distances.push(Math.round(section.getBoundingClientRect().y))
         })
